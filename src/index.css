@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,6 @@
 }
 
 body {
-  margin: 0;
   font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,44 +43,9 @@ h1 {
 .app .search {
   text-align: center;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* styling for searchbar */
-.search-btn {
-  font-size: 2rem;
-  color: #f8f8f8;
-  cursor: pointer;
-}
-
-form {
-  color: #555;
-  display: flex;
-  padding: 2px;
-  border: 1px solid currentColor;
-  border-radius: 5px;
-}
-
-input[type="text"] {
-  border: none;
-  background: transparent;
-  margin: 0;
-  padding: 7px 8px;
-  font-size: 14px;
-  color: inherit;
-  border: 1px solid transparent;
-  border-radius: inherit;
-}
-
-input[type="text"]::placeholder {
-  color: #bbb;
-}
-
-/* styling for searchbar */
-
-/* .app input {
+.app input {
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
@@ -92,7 +56,7 @@ input[type="text"]::placeholder {
 
 ::placeholder {
   color: #f8f8f8;
-} */
+}
 
 .container {
   max-width: 700px;
@@ -115,7 +79,7 @@ input[type="text"]::placeholder {
   position: relative;
   right: -90%;
   transform-origin: 0 0;
-  transform: rotate(270deg);
+  transform: rotate(269deg);
 }
 
 .app .bottom {
