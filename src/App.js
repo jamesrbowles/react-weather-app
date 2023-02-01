@@ -1,5 +1,7 @@
 import { useState } from "react";
+
 import axios from "axios";
+import { BsSearch } from "react-icons/bs";
 
 //API key
 // 422b4de40c79fd4020f70672264c4186
@@ -20,16 +22,28 @@ function App() {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.get(url).then((response) => {
+      setData(response.data);
+      console.log(response.data);
+    });
+    setLocation("");
+  };
+
   return (
     <div className="app">
       <div className="search">
-        <input
-          type="text"
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
-          placeholder="Enter Location"
-          onKeyDown={searchLocation}
-        />
+        <form onClick={handleSubmit}>
+          <input
+            type="text"
+            value={location}
+            onChange={(event) => setLocation(event.target.value)}
+            placeholder="Enter Location"
+            onKeyDown={searchLocation}
+          />
+          <BsSearch type="submit" className="search-btn" />
+        </form>
       </div>
       <div className="container">
         <div className="top">
